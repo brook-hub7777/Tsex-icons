@@ -1,0 +1,29 @@
+import React, { forwardRef } from 'react';
+import type { IconProps } from '../types';
+
+export const VolumeLow1Twotone = forwardRef<SVGSVGElement, IconProps>(({
+  size = 24,
+  color = '#292D32',
+  fill = 'none',
+  className = '',
+  style,
+  ...props
+}, ref) => (
+  <svg
+    ref={ref}
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill={fill}
+    className={className}
+    style={{ color, ...style }}
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+  >
+    <path d="M3.33008 9.99979V13.9998C3.33008 15.9998 4.33008 16.9998 6.33008 16.9998H7.76008C8.13008 16.9998 8.50008 17.1098 8.82008 17.2998L11.7401 19.1298C14.2601 20.7098 16.3301 19.5598 16.3301 16.5898V7.40979C16.3301 4.42979 14.2601 3.28979 11.7401 4.86979L8.82008 6.69979C8.50008 6.88979 8.13008 6.99979 7.76008 6.99979H6.33008C4.33008 6.99979 3.33008 7.99979 3.33008 9.99979Z" stroke="currentColor" strokeWidth="1.5"/>
+  <path opacity="0.4" d="M19.3301 8C21.1101 10.37 21.1101 13.63 19.3301 16" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+  </svg>
+));
+
+VolumeLow1Twotone.displayName = 'VolumeLow1Twotone';
+export default VolumeLow1Twotone;

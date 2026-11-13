@@ -1,0 +1,29 @@
+import React, { forwardRef } from 'react';
+import type { IconProps } from '../types';
+
+export const DevicesBluetoothCircleTwotone = forwardRef<SVGSVGElement, IconProps>(({
+  size = 24,
+  color = '#292D32',
+  fill = 'none',
+  className = '',
+  style,
+  ...props
+}, ref) => (
+  <svg
+    ref={ref}
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill={fill}
+    className={className}
+    style={{ color, ...style }}
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+  >
+    <path opacity="0.5" d="M11 12L14.2 9.5929C14.7333 9.19171 15 8.99112 15 8.71759C15 8.44405 14.7333 8.24346 14.2 7.84228L12.7455 6.74814C11.9838 6.17524 11.603 5.88879 11.3015 6.04C11 6.1912 11 6.66862 11 7.62345V12ZM11 12V16.3766C11 17.3314 11 17.8088 11.3015 17.96C11.603 18.1112 11.9838 17.8248 12.7455 17.2519L14.2 16.1577C14.7333 15.7565 15 15.5559 15 15.2824C15 15.0089 14.7333 14.8083 14.2 14.4071L11 12ZM11 12L8 9.5M11 12L8 14.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+  <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="1.5"/>
+  </svg>
+));
+
+DevicesBluetoothCircleTwotone.displayName = 'DevicesBluetoothCircleTwotone';
+export default DevicesBluetoothCircleTwotone;

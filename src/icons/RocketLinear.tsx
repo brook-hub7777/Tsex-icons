@@ -1,0 +1,38 @@
+import React, { forwardRef } from 'react';
+import type { IconProps } from '../types';
+
+export const RocketLinear = forwardRef<SVGSVGElement, IconProps>(({
+  size = 24,
+  color = '#292D32',
+  fill = 'none',
+  className = '',
+  style,
+  ...props
+}, ref) => (
+  <svg
+    ref={ref}
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill={fill}
+    className={className}
+    style={{ color, ...style }}
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+  >
+    <g transform="rotate(45 12 12) translate(12 12) scale(0.75) translate(-12 -12)">
+    <path d="M12 1C7 1 5 10 5 15C5 18 6 21 6 21H18C18 21 19 18 19 15C19 10 17 1 12 1Z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+    <path d="M5.2 10H18.8" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+    <path d="M5 15H2L4 21L6 21" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+    <path d="M19 15H22L20 21L18 21" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+    <circle cx="12" cy="15.5" r="2.5" stroke="currentColor" strokeWidth="1.5"/>
+    <path d="M8 21L9 23H15L16 21" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+    <path d="M12 23V28" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+    <path d="M10 23V26" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+    <path d="M14 23V26" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+  </g>
+  </svg>
+));
+
+RocketLinear.displayName = 'RocketLinear';
+export default RocketLinear;

@@ -1,0 +1,28 @@
+import React, { forwardRef } from 'react';
+import type { IconProps } from '../types';
+
+export const TimerBroken = forwardRef<SVGSVGElement, IconProps>(({
+  size = 24,
+  color = '#292D32',
+  fill = 'none',
+  className = '',
+  style,
+  ...props
+}, ref) => (
+  <svg
+    ref={ref}
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill={fill}
+    className={className}
+    style={{ color, ...style }}
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+  >
+    <path d="M9.60906 9.83L17.2591 16.78C19.2891 18.62 18.9991 22 15.2391 22H8.75906C4.99906 22 4.70906 18.62 6.73906 16.78L17.2591 7.22C19.2891 5.38 18.9991 2 15.2391 2H8.75906C4.99906 2 4.70906 5.38 6.73906 7.22" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+  </svg>
+));
+
+TimerBroken.displayName = 'TimerBroken';
+export default TimerBroken;

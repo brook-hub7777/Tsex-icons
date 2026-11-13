@@ -1,0 +1,29 @@
+import React, { forwardRef } from 'react';
+import type { IconProps } from '../types';
+
+export const Grid9Bold = forwardRef<SVGSVGElement, IconProps>(({
+  size = 24,
+  color = '#292D32',
+  fill = 'currentColor',
+  className = '',
+  style,
+  ...props
+}, ref) => (
+  <svg
+    ref={ref}
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill={fill}
+    className={className}
+    style={{ color, ...style }}
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+  >
+    <path d="M22 7.81V16.19C22 19.83 19.83 22 16.19 22H12.75V2H16.19C19.83 2 22 4.17 22 7.81Z" fill="currentColor"/>
+  <path d="M11.25 2V22H7.81C4.17 22 2 19.83 2 16.19V7.81C2 4.17 4.17 2 7.81 2H11.25Z" fill="currentColor"/>
+  </svg>
+));
+
+Grid9Bold.displayName = 'Grid9Bold';
+export default Grid9Bold;

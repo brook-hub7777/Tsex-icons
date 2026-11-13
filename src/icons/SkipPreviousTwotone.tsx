@@ -1,0 +1,29 @@
+import React, { forwardRef } from 'react';
+import type { IconProps } from '../types';
+
+export const SkipPreviousTwotone = forwardRef<SVGSVGElement, IconProps>(({
+  size = 24,
+  color = '#292D32',
+  fill = 'none',
+  className = '',
+  style,
+  ...props
+}, ref) => (
+  <svg
+    ref={ref}
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill={fill}
+    className={className}
+    style={{ color, ...style }}
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+  >
+    <path d="M7.34016 9.35258C5.55328 10.5065 5.55328 13.4935 7.34015 14.6474L18.1292 21.6145C19.8658 22.736 22 21.2763 22 18.9671L22 5.0329C22 2.72368 19.8658 1.26402 18.1292 2.38548L7.34016 9.35258Z" stroke="currentColor" strokeWidth="1.5"/>
+  <path opacity="0.5" d="M2 5V19" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+  </svg>
+));
+
+SkipPreviousTwotone.displayName = 'SkipPreviousTwotone';
+export default SkipPreviousTwotone;

@@ -1,0 +1,32 @@
+import React, { forwardRef } from 'react';
+import type { IconProps } from '../types';
+
+export const RulerBroken = forwardRef<SVGSVGElement, IconProps>(({
+  size = 24,
+  color = '#292D32',
+  fill = 'none',
+  className = '',
+  style,
+  ...props
+}, ref) => (
+  <svg
+    ref={ref}
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill={fill}
+    className={className}
+    style={{ color, ...style }}
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+  >
+    <path d="M22 10C22 8 21 7 19 7H5C3 7 2 8 2 10V14C2 16 3 17 5 17H19C21 17 22 16 22 14" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+  <path d="M18 7V12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+  <path d="M6 7V11" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+  <path d="M10.05 7L10 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+  <path d="M14 7V10" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+  </svg>
+));
+
+RulerBroken.displayName = 'RulerBroken';
+export default RulerBroken;

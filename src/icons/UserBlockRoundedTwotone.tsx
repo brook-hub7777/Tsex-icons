@@ -1,0 +1,31 @@
+import React, { forwardRef } from 'react';
+import type { IconProps } from '../types';
+
+export const UserBlockRoundedTwotone = forwardRef<SVGSVGElement, IconProps>(({
+  size = 24,
+  color = '#292D32',
+  fill = 'none',
+  className = '',
+  style,
+  ...props
+}, ref) => (
+  <svg
+    ref={ref}
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill={fill}
+    className={className}
+    style={{ color, ...style }}
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+  >
+    <circle cx="12" cy="6" r="4" stroke="currentColor" strokeWidth="1.5"/>
+  <circle cx="17" cy="18" r="4" stroke="currentColor" strokeWidth="1.5"/>
+  <path d="M20 15L14 21" stroke="currentColor" strokeWidth="1.5"/>
+  <path opacity="0.5" d="M14 20.8344C13.3663 20.9421 12.695 21 12 21C8.13401 21 5 19.2091 5 17C5 14.7909 8.13401 13 12 13C13.7135 13 15.2832 13.3518 16.5 13.9359" stroke="currentColor" strokeWidth="1.5"/>
+  </svg>
+));
+
+UserBlockRoundedTwotone.displayName = 'UserBlockRoundedTwotone';
+export default UserBlockRoundedTwotone;

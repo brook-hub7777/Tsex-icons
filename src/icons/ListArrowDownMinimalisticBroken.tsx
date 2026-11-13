@@ -1,0 +1,31 @@
+import React, { forwardRef } from 'react';
+import type { IconProps } from '../types';
+
+export const ListArrowDownMinimalisticBroken = forwardRef<SVGSVGElement, IconProps>(({
+  size = 24,
+  color = '#292D32',
+  fill = 'none',
+  className = '',
+  style,
+  ...props
+}, ref) => (
+  <svg
+    ref={ref}
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill={fill}
+    className={className}
+    style={{ color, ...style }}
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+  >
+    <path d="M11 16L3 16" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+  <path d="M12 11L3 11" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+  <path d="M15 14.5L17.5 17M17.5 17L20 14.5M17.5 17V9" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+  <path d="M3 6L13.5 6M20 6L17.75 6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+  </svg>
+));
+
+ListArrowDownMinimalisticBroken.displayName = 'ListArrowDownMinimalisticBroken';
+export default ListArrowDownMinimalisticBroken;

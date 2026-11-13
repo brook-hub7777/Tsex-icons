@@ -1,0 +1,33 @@
+import React, { forwardRef } from 'react';
+import type { IconProps } from '../types';
+
+export const ShuffleBroken = forwardRef<SVGSVGElement, IconProps>(({
+  size = 24,
+  color = '#292D32',
+  fill = 'none',
+  className = '',
+  style,
+  ...props
+}, ref) => (
+  <svg
+    ref={ref}
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill={fill}
+    className={className}
+    style={{ color, ...style }}
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+  >
+    <path d="M16.4492 6L20.9992 6.02002" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+  <path d="M3 17.98L5.54999 17.99C6.45999 17.99 7.31 17.54 7.81 16.79L8.98999 15.02L9.75 13.88L13.67 8" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+  <path d="M19 19.98L21 17.98" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+  <path d="M8.89001 8.61993L7.81 7.11993C7.3 6.40993 6.47999 5.98993 5.60999 5.99993L3 6.00994" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+  <path d="M12.9707 15.3799L14.1907 16.9499C14.7007 17.6099 15.5007 17.9999 16.3407 17.9999L21.0107 17.9799" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+  <path d="M21 6.02002L19 4.02002" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+  </svg>
+));
+
+ShuffleBroken.displayName = 'ShuffleBroken';
+export default ShuffleBroken;

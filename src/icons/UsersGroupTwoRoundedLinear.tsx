@@ -1,0 +1,33 @@
+import React, { forwardRef } from 'react';
+import type { IconProps } from '../types';
+
+export const UsersGroupTwoRoundedLinear = forwardRef<SVGSVGElement, IconProps>(({
+  size = 24,
+  color = '#292D32',
+  fill = 'none',
+  className = '',
+  style,
+  ...props
+}, ref) => (
+  <svg
+    ref={ref}
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill={fill}
+    className={className}
+    style={{ color, ...style }}
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+  >
+    <circle cx="12" cy="6" r="4" stroke="currentColor" strokeWidth="1.5"/>
+  <path d="M18 9C19.6569 9 21 7.88071 21 6.5C21 5.11929 19.6569 4 18 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+  <path d="M6 9C4.34315 9 3 7.88071 3 6.5C3 5.11929 4.34315 4 6 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+  <ellipse cx="12" cy="17" rx="6" ry="4" stroke="currentColor" strokeWidth="1.5"/>
+  <path d="M20 19C21.7542 18.6153 23 17.6411 23 16.5C23 15.3589 21.7542 14.3847 20 14" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+  <path d="M4 19C2.24575 18.6153 1 17.6411 1 16.5C1 15.3589 2.24575 14.3847 4 14" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+  </svg>
+));
+
+UsersGroupTwoRoundedLinear.displayName = 'UsersGroupTwoRoundedLinear';
+export default UsersGroupTwoRoundedLinear;

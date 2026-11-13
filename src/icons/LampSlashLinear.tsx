@@ -1,0 +1,31 @@
+import React, { forwardRef } from 'react';
+import type { IconProps } from '../types';
+
+export const LampSlashLinear = forwardRef<SVGSVGElement, IconProps>(({
+  size = 24,
+  color = '#292D32',
+  fill = 'none',
+  className = '',
+  style,
+  ...props
+}, ref) => (
+  <svg
+    ref={ref}
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill={fill}
+    className={className}
+    style={{ color, ...style }}
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+  >
+    <path d="M20.0299 2.47998L4.17993 18.33" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+  <path d="M5.25008 12.9999C4.83008 12.0299 4.58008 10.9799 4.58008 9.89993C4.58008 4.98993 8.80008 1.11993 13.6001 2.16993C15.0601 2.48993 16.3601 3.26993 17.3601 4.34993" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+  <path d="M19.0599 7.30005C20.2799 11.18 18.3099 15.08 15.5199 16.87V18.03C15.5199 18.32 15.6199 18.99 14.6199 18.99H9.41991C8.38991 18.99 8.51991 18.56 8.51991 18.03V16.87C8.03991 16.57 7.58991 16.2 7.15991 15.77" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+  <path d="M8.5 22C10.79 21.35 13.21 21.35 15.5 22" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+  </svg>
+));
+
+LampSlashLinear.displayName = 'LampSlashLinear';
+export default LampSlashLinear;

@@ -1,0 +1,52 @@
+{
+  "name": "tsex-icons",
+  "version": "1.0.0",
+  "description": "Open-source, tree-shakable React SVG icon library featuring linear, bold, and bulk variants.",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "sideEffects": false,
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "keywords": [
+    "react",
+    "icons",
+    "svg",
+    "components",
+    "react-icons",
+    "tree-shaking",
+    "esm",
+    "cjs"
+  ],
+  "license": "MIT",
+  "peerDependencies": {
+    "react": ">=16.8.0"
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts --clean",
+    "prepublishOnly": "npm run build",
+    "preview": "node preview/server.cjs",
+    "parse:svgs": "node scripts/parse-svgs.js",
+    "generate:types": "node scripts/generate-types.js",
+    "test": "node scripts/test-dist.js",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/react": "^19.3.0",
+    "esbuild": "^0.25.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "tsup": "^9.0.0",
+    "typescript": "^5.9.3"
+  }
+}

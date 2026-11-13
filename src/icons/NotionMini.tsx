@@ -1,0 +1,28 @@
+import React, { forwardRef } from 'react';
+import type { IconProps } from '../types';
+
+export const NotionMini = forwardRef<SVGSVGElement, IconProps>(({
+  size = 24,
+  color = '#292D32',
+  fill = 'currentColor',
+  className = '',
+  style,
+  ...props
+}, ref) => (
+  <svg
+    ref={ref}
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill={fill}
+    className={className}
+    style={{ color, ...style }}
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+  >
+    <path d="M2.973 2.805c.497.404.684.373 1.619.31l8.81-.529c.186 0 .031-.186-.031-.217L11.24 1.312c-.28-.217-.654-.467-1.37-.405L2.007 1.53c-.31.031-.373.187-.249.311zm.528 2.053v9.27c0 .497.249.684.81.653l9.682-.56c.56-.031.623-.373.623-.778V4.236c0-.404-.155-.622-.498-.591L3.996 4.236c-.373.031-.498.218-.498.622zm9.558.497c.062.28 0 .56-.28.592l-.467.093v6.843c-.405.218-.778.342-1.09.342-.498 0-.623-.156-.997-.622l-3.051-4.79v4.634l.809.156s0 .56-.778.56l-2.148.124c-.062-.124 0-.435.218-.498l.56-.155V6.568l-.56-.062c-.062-.28.093-.684.529-.715l2.304-.156 3.176 4.852V6.195l-.81-.093c-.062-.342.186-.591.498-.622z" fill="currentColor"/>
+  </svg>
+));
+
+NotionMini.displayName = 'NotionMini';
+export default NotionMini;

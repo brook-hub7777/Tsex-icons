@@ -1,0 +1,31 @@
+import React, { forwardRef } from 'react';
+import type { IconProps } from '../types';
+
+export const BowlingTwotone = forwardRef<SVGSVGElement, IconProps>(({
+  size = 24,
+  color = '#292D32',
+  fill = 'none',
+  className = '',
+  style,
+  ...props
+}, ref) => (
+  <svg
+    ref={ref}
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill={fill}
+    className={className}
+    style={{ color, ...style }}
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+  >
+    <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="1.5"/>
+  <circle opacity="0.5" cx="12" cy="7" r="1.5" transform="rotate(-90 12 7)" stroke="currentColor" strokeWidth="1.5"/>
+  <circle opacity="0.5" cx="12" cy="12" r="1.5" transform="rotate(-90 12 12)" stroke="currentColor" strokeWidth="1.5"/>
+  <path opacity="0.5" d="M8 8C8.82843 8 9.5 8.67157 9.5 9.5C9.5 10.3284 8.82843 11 8 11C7.17157 11 6.5 10.3284 6.5 9.5C6.5 8.67157 7.17157 8 8 8Z" stroke="currentColor" strokeWidth="1.5"/>
+  </svg>
+));
+
+BowlingTwotone.displayName = 'BowlingTwotone';
+export default BowlingTwotone;
