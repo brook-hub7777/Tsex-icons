@@ -1,6 +1,4 @@
 <img width="2730" height="1536" alt="Gemini_Generated_Image_2l2p1r2l2p1r2l2p" src="https://github.com/user-attachments/assets/87fc17a5-2f94-40a2-bbca-7707ed0e7d7d" />
-Here is your customized `README.md` updated for **TseX Icons** (`tsex-icons`) and linked to your GitHub profile (`brook-hub7777`):
-
 ```markdown
 # TseX Icons
 
