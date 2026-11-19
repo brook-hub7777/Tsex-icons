@@ -65,3 +65,5 @@ test -f .vercel-static/index.html &&
 Open the deployed homepage, click **Installation**, and refresh that page. Also open `/installation` directly in a fresh tab to check the rewrite.
 
 On the deployed homepage, use the browser's Network panel to confirm the JavaScript and CSS referenced in `preview/index.html` load successfully with their expected content types.
+
+To test the upstream rewrite, find an icon chunk loaded in the browser's Network panel whose filename is absent from `preview/assets/`. Check that its request succeeds, returns JavaScript, and the icon renders.
