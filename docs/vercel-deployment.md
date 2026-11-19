@@ -51,3 +51,11 @@ Run the configured copy command from the repository root in a shell to reproduce
 ```sh
 sh -c "$(node -p "require('./vercel.json').buildCommand")"
 ```
+
+Verify the homepage HTML, asset directory, and license notice are present after staging.
+
+```sh
+test -f .vercel-static/index.html &&
+  test -d .vercel-static/assets &&
+  test -f .vercel-static/THIRD_PARTY_NOTICES.txt
+```
