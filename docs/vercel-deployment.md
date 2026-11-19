@@ -27,3 +27,5 @@ The generated `.vercel-static/` directory is ignored by Git. Vercel rebuilds it 
 ## Routes and icon assets
 
 The homepage at `/` serves the staged `index.html`. That page loads the preview's JavaScript, stylesheet, and branding assets.
+
+A direct request to `/installation` is rewritten to `/index.html`. The client-side router then renders the installation page at the requested URL.
