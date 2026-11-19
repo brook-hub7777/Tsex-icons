@@ -41,3 +41,5 @@ The [third-party notice](../preview/THIRD_PARTY_NOTICES.txt) carries the upstrea
 ## Local verification
 
 Start the local preview with `npm run preview` and open `http://localhost:3000`. The server uses Node's built-in modules.
+
+If port 3000 is busy, run `PORT=3100 npm run preview` and open `http://localhost:3100`.
