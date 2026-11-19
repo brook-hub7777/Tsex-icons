@@ -71,3 +71,5 @@ To test the upstream rewrite, find an icon chunk loaded in the browser's Network
 ## GitHub and Vercel
 
 The existing `tsex-icons` Vercel project is connected to [`brook-hub7777/Tsex-icons`](https://github.com/brook-hub7777/Tsex-icons). Push to `main` to trigger the connected production deployment.
+
+On GitHub, open the Vercel check for the commit you pushed. In Vercel, confirm the source commit matches GitHub and the deployment reaches **Ready** before testing the site.
