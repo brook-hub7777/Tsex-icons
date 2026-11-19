@@ -17,3 +17,5 @@ The configuration sets `framework` to `null` because the preview contains compil
 The empty `installCommand` skips dependency installation. Every file the build command copies is already in the repository.
 
 The build command creates `.vercel-static/` and copies the website files into it. The configured `outputDirectory` tells Vercel which folder to publish.
+
+The staging command copies `preview/index.html`, the top-level PNG images and favicon, `preview/assets/`, and the third-party notice. Add site assets to `preview/assets/` so the existing copy command includes them.
