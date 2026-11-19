@@ -35,3 +35,5 @@ Vercel checks the published filesystem first. A matching file under `/assets/` i
 When a requested `/assets/` file is absent from the deployment, Vercel forwards the same asset path to `https://mx-icons.vercel.app`. Those requests depend on the upstream host continuing to serve the original chunk filenames.
 
 The preview HTML omits the upstream Umami script and Google site-verification tag. The preview no longer sends its page views through that script or advertises the upstream verification token.
+
+The [third-party notice](../preview/THIRD_PARTY_NOTICES.txt) carries the upstream mx-icons copyright and MIT terms. It is included at `/THIRD_PARTY_NOTICES.txt` in the staged website.
