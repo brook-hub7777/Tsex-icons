@@ -11,3 +11,5 @@ Running `npm run build` locally produced the CommonJS and ES module bundles, the
 ## Vercel build
 
 Use the repository root as the Vercel project's Root Directory. It contains [`vercel.json`](../vercel.json) and the `preview/` input directory.
+
+The configuration sets `framework` to `null` because the preview contains compiled HTML, JavaScript, and CSS. Vercel can publish it as a static site.
