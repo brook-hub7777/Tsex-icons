@@ -31,3 +31,5 @@ The homepage at `/` serves the staged `index.html`. That page loads the preview'
 A direct request to `/installation` is rewritten to `/index.html`. The client-side router then renders the installation page at the requested URL.
 
 Vercel checks the published filesystem first. A matching file under `/assets/` is served from the deployment. [Vercel rewrite behavior](https://vercel.com/docs/routing/rewrites)
+
+When a requested `/assets/` file is absent from the deployment, Vercel forwards the same asset path to `https://mx-icons.vercel.app`. Those requests depend on the upstream host continuing to serve the original chunk filenames.
