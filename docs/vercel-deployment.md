@@ -5,3 +5,5 @@ Tsex-icons publishes a browser-based icon preview to Vercel. The repository also
 ## Why the deployment changed
 
 The merge at `085c6435` kept the tree from its first parent, `e4e5d64d`. The README and the project files from that parent carried through to the merge.
+
+Running `npm run build` locally produced the CommonJS and ES module bundles, then exhausted the TypeScript declaration worker's heap. That command builds the package under `dist/`. The Vercel fix in `e804cd4e` stages the website from `preview/`.
