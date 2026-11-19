@@ -1,0 +1,17 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "installCommand": "",
+  "buildCommand": "mkdir -p .vercel-static && cp -R preview/index.html preview/*.png preview/favicon.ico preview/assets preview/THIRD_PARTY_NOTICES.txt .vercel-static/",
+  "outputDirectory": ".vercel-static",
+  "rewrites": [
+    {
+      "source": "/installation",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/assets/:path*",
+      "destination": "https://mx-icons.vercel.app/assets/:path*"
+    }
+  ]
+}
