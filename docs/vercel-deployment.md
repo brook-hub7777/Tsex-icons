@@ -15,3 +15,5 @@ Use the repository root as the Vercel project's Root Directory. It contains [`ve
 The configuration sets `framework` to `null` because the preview contains compiled HTML, JavaScript, and CSS. Vercel can publish it as a static site.
 
 The empty `installCommand` skips dependency installation. Every file the build command copies is already in the repository.
+
+The build command creates `.vercel-static/` and copies the website files into it. The configured `outputDirectory` tells Vercel which folder to publish.
