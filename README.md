@@ -135,4 +135,4 @@ See the [Vercel deployment guide](https://github.com/brook-hub7777/Tsex-icons/bl
 
 This project is licensed under the [MIT License](https://github.com/brook-hub7777/Tsex-icons/blob/main/LICENSE).
 
-The license includes the upstream copyright notice for icons adapted from [mx-icons](https://github.com/ig-imanish/mx-icons).
+The bundled icons include assets adapted from mx-icons. [Third-party notice](https://github.com/brook-hub7777/Tsex-icons/blob/main/preview/THIRD_PARTY_NOTICES.txt)

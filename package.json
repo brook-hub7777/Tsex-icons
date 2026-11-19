@@ -16,7 +16,8 @@
   "sideEffects": false,
   "files": [
     "dist",
-    "README.md"
+    "README.md",
+    "preview/THIRD_PARTY_NOTICES.txt"
   ],
   "keywords": [
     "react",

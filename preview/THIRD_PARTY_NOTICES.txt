@@ -1,4 +1,4 @@
-The browser preview includes software from mx-icons.
+Tsex Icons includes icon assets adapted from mx-icons. The browser preview also includes software from mx-icons.
 https://github.com/ig-imanish/mx-icons
 
 MIT License
