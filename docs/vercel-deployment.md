@@ -21,3 +21,5 @@ The build command creates `.vercel-static/` and copies the website files into it
 The staging command copies `preview/index.html`, the top-level PNG images and favicon, `preview/assets/`, and the third-party notice. Add site assets to `preview/assets/` so the existing copy command includes them.
 
 The Node preview server, `preview/server.cjs`, supports local development. Vercel receives the staged static files and serves them directly.
+
+The generated `.vercel-static/` directory is ignored by Git. Vercel rebuilds it from the tracked preview files on each deployment.
