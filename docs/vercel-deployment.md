@@ -37,3 +37,7 @@ When a requested `/assets/` file is absent from the deployment, Vercel forwards 
 The preview HTML omits the upstream Umami script and Google site-verification tag. The preview no longer sends its page views through that script or advertises the upstream verification token.
 
 The [third-party notice](../preview/THIRD_PARTY_NOTICES.txt) carries the upstream mx-icons copyright and MIT terms. It is included at `/THIRD_PARTY_NOTICES.txt` in the staged website.
+
+## Local verification
+
+Start the local preview with `npm run preview` and open `http://localhost:3000`. The server uses Node's built-in modules.
