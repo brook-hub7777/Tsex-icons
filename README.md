@@ -125,6 +125,12 @@ Every icon component accepts standard SVG element attributes and the following p
 
 ---
 
+## Website deployment
+
+See the [Vercel deployment guide](https://github.com/brook-hub7777/Tsex-icons/blob/main/docs/vercel-deployment.md) for the preview build, routes, and verification steps.
+
+---
+
 ## License
 
 This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
