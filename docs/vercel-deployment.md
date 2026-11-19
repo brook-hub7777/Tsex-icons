@@ -19,3 +19,5 @@ The empty `installCommand` skips dependency installation. Every file the build c
 The build command creates `.vercel-static/` and copies the website files into it. The configured `outputDirectory` tells Vercel which folder to publish.
 
 The staging command copies `preview/index.html`, the top-level PNG images and favicon, `preview/assets/`, and the third-party notice. Add site assets to `preview/assets/` so the existing copy command includes them.
+
+The Node preview server, `preview/server.cjs`, supports local development. Vercel receives the staged static files and serves them directly.
