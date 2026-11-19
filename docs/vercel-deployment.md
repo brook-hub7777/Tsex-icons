@@ -75,3 +75,5 @@ The existing `tsex-icons` Vercel project is connected to [`brook-hub7777/Tsex-ic
 On GitHub, open the Vercel check for the commit you pushed. In Vercel, confirm the source commit matches GitHub and the deployment reaches **Ready** before testing the site.
 
 If a deployment fails with a missing output directory or the homepage returns a 404, check the Vercel build log, the configured Root Directory, and the presence of `.vercel-static/index.html` after the local staging command.
+
+If the homepage opens but individual icons fail, inspect the failing asset request. Check whether the exact chunk is present locally or still exists at the upstream origin. A renamed chunk requires a matching preview bundle and asset set.
