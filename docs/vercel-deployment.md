@@ -67,3 +67,7 @@ Open the deployed homepage, click **Installation**, and refresh that page. Also 
 On the deployed homepage, use the browser's Network panel to confirm the JavaScript and CSS referenced in `preview/index.html` load successfully with their expected content types.
 
 To test the upstream rewrite, find an icon chunk loaded in the browser's Network panel whose filename is absent from `preview/assets/`. Check that its request succeeds, returns JavaScript, and the icon renders.
+
+## GitHub and Vercel
+
+The existing `tsex-icons` Vercel project is connected to [`brook-hub7777/Tsex-icons`](https://github.com/brook-hub7777/Tsex-icons). Push to `main` to trigger the connected production deployment.
