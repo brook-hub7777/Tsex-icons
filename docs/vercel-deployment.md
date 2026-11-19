@@ -23,3 +23,7 @@ The staging command copies `preview/index.html`, the top-level PNG images and fa
 The Node preview server, `preview/server.cjs`, supports local development. Vercel receives the staged static files and serves them directly.
 
 The generated `.vercel-static/` directory is ignored by Git. Vercel rebuilds it from the tracked preview files on each deployment.
+
+## Routes and icon assets
+
+The homepage at `/` serves the staged `index.html`. That page loads the preview's JavaScript, stylesheet, and branding assets.
