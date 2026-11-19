@@ -59,3 +59,7 @@ test -f .vercel-static/index.html &&
   test -d .vercel-static/assets &&
   test -f .vercel-static/THIRD_PARTY_NOTICES.txt
 ```
+
+## Deployment verification
+
+Open the deployed homepage, click **Installation**, and refresh that page. Also open `/installation` directly in a fresh tab to check the rewrite.
